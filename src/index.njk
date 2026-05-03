@@ -1,6 +1,42 @@
 ---
-title: Home
 layout: base.njk
+title: Fake Mirrors
 ---
 
-<div></div>
+{% include "icons.svg" %}
+
+<main class="bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 min-h-screen">
+  <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
+
+    <!-- Logo and header -->
+    <div class="text-center">
+      <div class="flex justify-center mb-6">
+        <div class="h-16 w-16 rounded-2xl bg-gradient-to-tr from-cyan-500 to-blue-600 shadow-xl flex items-center justify-center">
+          <svg class="w-8 h-8 text-white"><use href="#logo"/></svg>
+        </div>
+      </div>
+      
+      <h1 class="font-mono font-bold text-5xl sm:text-6xl bg-gradient-to-r from-slate-100 to-slate-400 bg-clip-text text-transparent">
+        Famir
+      </h1>
+      
+      <p class="max-w-xl mx-auto mt-6 text-lg text-slate-300">
+        Fake mirrors entire the Web!
+      </p>
+      
+      <!-- Buttons -->
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a href="https://github.com/bitnoize/famir" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-slate-800 border border-slate-700 text-slate-200 hover:bg-slate-700">
+          <svg class="w-5 h-5"><use href="#github"/></svg>
+          GitHub
+        </a>
+        
+        <a href="https://docs.fake-mirrors.net" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-cyan-600/10 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-600/20">
+          <svg class="w-5 h-5"><use href="#docs"/></svg>
+          Documentation
+        </a>
+      </div>
+    </div>
+   
+  </div>
+</main>
