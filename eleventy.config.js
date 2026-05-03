@@ -7,6 +7,13 @@ export default (eleventyConfig) => {
   eleventyConfig.addPlugin(tailwindcss, {
     input: 'styles/main.css',
   })
+
+  eleventyConfig.addPassthroughCopy("src/favicon.ico")
+  eleventyConfig.addPassthroughCopy("src/robots.txt")
+
+  eleventyConfig.addFilter("dateToRfc3339", (date) => {
+    return date ? new Date(date).toISOString() : new Date().toISOString()
+  })
 }
 
 export const config = {
