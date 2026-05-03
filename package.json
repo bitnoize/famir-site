@@ -1,0 +1,20 @@
+{
+  "name": "famir-site",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Fake-mirrors site",
+  "scripts": {
+    "format": "prettier -w src",
+    "build": "eleventy",
+    "start": "eleventy --serve --port 3000"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.5",
+    "prettier": "^3.8.2",
+    "prettier-plugin-organize-imports": "^4.3.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy-navigation": "^1.0.5",
+    "eleventy-plugin-tailwindcss-4": "^3.0.0"
+  }
+}
